@@ -1,0 +1,47 @@
+$topBarHeight:              5.375em;
+$headerHeight: 				          3em;
+$headerHeightMobile:        3.875em;
+$containerWidth: 			       1366px;
+$paddingWrapperDesktop:		0 3.750em;
+$paddingWrapperLaptops:		0 1.250em;
+$paddingWrapperMobile:		0 0.750em;
+$sidebarWidth:                 25em;
+
+
+$size6px:	0.375em;
+$size8px:	0.500em;
+$size10px:	0.625em;
+$size11px:	0.688em;
+$size12px:	0.750em;
+$size13px:	0.813em;
+$size14px:	0.875em;
+$size15px:	0.938em;
+$size16px:	1.000em;
+$size17px:	1.063em;
+$size18px:	1.125em;
+$size19px:	1.188em;
+$size20px:	1.250em;
+$size21px:	1.313em;
+$size22px:	1.375em;
+$size23px:	1.438em;
+$size24px:	1.500em;
+$size25px:	1.563em;
+$size26px:	1.625em;
+$size30px:	1.875em;
+$size32px:	2.000em;
+$size36px:	2.250em;
+$size40px:	2.500em;
+$size42px:	2.625em;
+$size56px:	3.500em;
+$size72px:	4.500em;
+$size112px:	7.000em;
+
+$stepMin: $size8px;
+$step1:   $stepMin;       //8pxg
+$step2:   $stepMin*2;     //16px
+$step3:   $stepMin*3;     //24px
+$step4:   $stepMin*4;     //32px
+$step6:   $stepMin*6;     //48px
+$step9:   $stepMin*9;     //72px
+$step12:  $stepMin*12;   //96px
+$step16:  $stepMin*16;   //128px

@@ -1,0 +1,22 @@
+/* Large desktops */
+$desktops:              'min-width: 1201px';
+$laptopsMax:            'max-width: 1200px';
+$laptopsMin:            'min-width: 992px';
+$largeTabletsMax:       'max-width: 991px';
+$largeTabletsMin:       'min-width: 769px';
+$smallTabletsMax:       'max-width: 768px';
+$smallTabletsMin:       'min-width: 481px';
+$phonesMax:             'max-width: 480px';
+
+$mq-breakpoints: (
+  mobileMax:    480px,
+  tabletMin:    481px,
+  tabletMax:    768px,
+  laptopMin:    769px,
+  laptopMax:    991px,
+  desktopMin:   992px,
+  desktopMax:   1200px,
+  wideScreen:   1201px,
+);
+
+

@@ -1,0 +1,16 @@
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -6px;
+  background: transparent;
+
+  &__tag {
+    width: 100%;
+    max-width: 10em;
+    flex: 1 0 10em;
+    height: $size10px;
+    margin: 0 6px 6px;
+    background: rgba($colorDarkPrimary, 0.5);
+    border-radius: $borderRadiusPrimary;
+  }
+}

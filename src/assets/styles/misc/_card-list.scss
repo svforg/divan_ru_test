@@ -1,0 +1,14 @@
+.card-list {
+  display: flex;
+  width: 100%;
+
+  &__box {
+    width: 100%;
+    max-width: 15em;
+    flex: 1 0 15em;
+    height: 15em;
+    margin-right: $size16px;
+    background: rgba(#555555, 0.5);
+    border-radius: $borderRadiusPrimary;
+  }
+}

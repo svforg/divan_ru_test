@@ -1,0 +1,43 @@
+html {
+  color: $colorDarkPrimary;
+  font-weight: normal;
+  font-size: 88%;
+  font-family: $fontFamilyPrimary;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
+  @media only screen and ($laptopsMax) {
+    font-size: 90%;
+  }
+
+  @media only screen and ($largeTabletsMax) {
+    font-size: 87%;
+  }
+
+  @media only screen and ($smallTabletsMax) {
+    font-size: 86%;
+  }
+
+  @media only screen and ($phonesMax) {
+    font-size: 85%;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  font-family: $fontFamilyPrimary;
+}
+
+h4, .h4 {
+  display: block;
+  margin-bottom: $step2;
+  font-weight: 600;
+  font-size: $size22px;
+
+  @media only screen and ($smallTabletsMax) {
+    margin-bottom: $step1;
+    font-size: $size16px;
+  }
+}

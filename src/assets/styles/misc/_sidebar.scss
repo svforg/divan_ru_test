@@ -1,0 +1,27 @@
+.sidebar {
+  position: relative;
+  float: right;
+  display: block;
+  width: $sidebarWidth;
+  margin-top: -$size56px;
+  padding: 0 $size56px $size32px;
+
+  &__inner {
+    box-shadow: 0 4px 20px 4px rgba(0,0,0, 0.1);
+  }
+
+  &__header {
+    min-height: $size112px;
+    background: #F2E680;
+  }
+
+  &__title {
+    min-height: $size32px;
+    background: #DEDEDE;
+  }
+
+  &__content {
+    min-height: 25em;
+    background: $colorLightPrimary;
+  }
+}

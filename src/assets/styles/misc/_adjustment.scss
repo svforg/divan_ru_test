@@ -1,0 +1,50 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: $colorLightSecondary;
+}
+
+li {
+  list-style-type: none;
+}
+
+.clearfix { clear: both; }
+
+.wrapper {
+  width: 100%;
+  max-width: $containerWidth;
+  margin-right: auto;
+  margin-left: auto;
+  padding: $paddingWrapperDesktop;
+  @media screen and ($phonesMax) {
+    max-width: 100%;
+    padding: $paddingWrapperMobile;
+  }
+  @media ($smallTabletsMin) and ($smallTabletsMax) {
+    max-width: 720px;
+  }
+  @media ($largeTabletsMin) and ($largeTabletsMax) {
+    max-width: 960px;
+    padding: $paddingWrapperLaptops;
+  }
+}
+
+.site-header {
+  width: 100%;
+  height: $size112px;
+  margin-bottom: $size72px;
+  background: $colorLightPrimary;
+  box-shadow: 0 0 20px 4px rgba(0,0,0, 0.1);
+}
+
+.site-main {
+  position: relative;
+  z-index: 1;
+  padding-bottom: $size72px;
+}
+
+.site-footer {
+  min-height: $size112px;
+  background: #DEDEDE;
+}
+

@@ -1,0 +1,126 @@
+$colorGrayPrimary   : #EFEFEF;
+$colorPurplePrimary : #CCCCFF;
+$colorPinkPrimary   : #FFCCCC;
+
+$colorText: $colorDarkPrimary;
+
+.tabs {
+  position: relative;
+  overflow: hidden;
+
+  &__label {
+    display: inline-flex;
+    align-items: center;
+    min-height: $size56px;
+    margin-right: -4px;
+    padding: 0 $size32px;
+    font-weight: 600;
+    text-align: center;
+    color: rgba($colorText, 0.3);
+    border-radius: $borderRadiusPrimary $borderRadiusPrimary 0 0;
+    user-select: none;
+    cursor: pointer;
+    transition: color $animateDurPrimary $animateEasingPrimary;
+
+    &[for*="1"] {
+      background: $colorGrayPrimary;
+    }
+    &[for*="2"] {
+      background: $colorPurplePrimary;
+    }
+    &[for*="3"] {
+      background: $colorPinkPrimary;
+    }
+
+    &:hover {
+      color: rgba($colorText, 1);
+    }
+  }
+
+  &__content {
+    float: left;
+    width: calc(100% - #{$sidebarWidth});
+    display: none;
+    min-height: 100%;
+    height: 100%;
+    padding: $size16px;
+    background: $colorLightPrimary;
+
+    &:after {
+      position: absolute;
+      top: $size56px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      content: "";
+    }
+
+    &#content1 {
+      background: $colorGrayPrimary;
+
+      &:after {
+        background: $colorGrayPrimary;
+      }
+    }
+    &#content2 {
+      background: $colorPurplePrimary;
+
+      &:after {
+        background: $colorPurplePrimary;
+      }
+    }
+    &#content3 {
+      background: $colorPinkPrimary;
+
+      &:after {
+        background: $colorPinkPrimary;
+      }
+    }
+  }
+
+  &__cards {
+    display: none;
+    overflow: hidden;
+    padding: $size16px;
+
+    &#content4 {
+      background: $colorGrayPrimary;
+
+      &:after {
+        background: $colorGrayPrimary;
+      }
+    }
+    &#content5 {
+      background: $colorPurplePrimary;
+
+      &:after {
+        background: $colorPurplePrimary;
+      }
+    }
+    &#content6 {
+      background: $colorPinkPrimary;
+
+      &:after {
+        background: $colorPinkPrimary;
+      }
+    }
+  }
+
+  &__checkbox {
+    display: none;
+
+    &:checked + label {
+      color: rgba($colorText, 1);
+    }
+  }
+
+  #tab1:checked ~ #content1,
+  #tab1:checked ~ #content4,
+  #tab2:checked ~ #content2,
+  #tab2:checked ~ #content5,
+  #tab3:checked ~ #content3,
+  #tab3:checked ~ #content6 {
+    display: block;
+  }
+}
