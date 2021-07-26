@@ -50,7 +50,7 @@ const plugins = () => [
   }),
 
   new MiniCssExtractPlugin({
-    filename: 'assets/css/[name].[contenthash].css',
+    filename: './assets/css/[name].[contenthash].css',
   }),
 
   new CopyWebpackPlugin({
